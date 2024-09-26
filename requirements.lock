@@ -13,6 +13,6 @@
 asgiref==3.8.1
     # via django
 django==5.1.1
-    # via employee-appraisal-platform
+    # via staff-perfomance-evaluation-platform
 sqlparse==0.5.1
     # via django
