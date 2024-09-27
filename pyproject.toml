@@ -4,6 +4,8 @@ version = "0.1.0"
 description = "Add your description here"
 dependencies = [
     "django>=5.1.1",
+    "django-extensions>=3.2.3",
+    "werkzeug>=3.0.4",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -14,10 +16,20 @@ build-backend = "hatchling.build"
 
 [tool.rye]
 managed = true
-dev-dependencies = []
+dev-dependencies = [
+    "commitizen>=3.29.1",
+]
 
 [tool.hatch.metadata]
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/employee_appraisal_platform"]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "semver"
+version_provider = "pep621"
+update_changelog_on_bump = true
+major_version_zero = true
