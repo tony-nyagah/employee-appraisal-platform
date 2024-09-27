@@ -19,6 +19,8 @@ charset-normalizer==3.3.2
 colorama==0.4.6
     # via commitizen
 commitizen==3.29.1
+coverage==7.6.1
+    # via pytest-cov
 decli==0.6.2
     # via commitizen
 django==5.1.1
@@ -26,6 +28,8 @@ django==5.1.1
     # via staff-perfomance-evaluation-platform
 django-extensions==3.2.3
     # via staff-perfomance-evaluation-platform
+iniconfig==2.0.0
+    # via pytest
 jinja2==3.1.4
     # via commitizen
 markupsafe==2.1.5
@@ -33,8 +37,14 @@ markupsafe==2.1.5
     # via werkzeug
 packaging==24.1
     # via commitizen
+    # via pytest
+pluggy==1.5.0
+    # via pytest
 prompt-toolkit==3.0.36
     # via questionary
+pytest==8.3.3
+    # via pytest-cov
+pytest-cov==5.0.0
 pyyaml==6.0.2
     # via commitizen
 questionary==2.0.1
