@@ -52,4 +52,4 @@ class DepartmentAdmin(admin.ModelAdmin):
 
 
 admin.site.register(CustomUser, CustomUserAdmin)
-admin.site.register(Department)
+admin.site.register(Department, DepartmentAdmin)
