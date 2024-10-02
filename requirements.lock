@@ -15,6 +15,8 @@ asgiref==3.8.1
 django==5.1.1
     # via django-extensions
     # via staff-perfomance-evaluation-platform
+django-environ==0.11.2
+    # via staff-perfomance-evaluation-platform
 django-extensions==3.2.3
     # via staff-perfomance-evaluation-platform
 markupsafe==2.1.5
