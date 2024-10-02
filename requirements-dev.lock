@@ -16,6 +16,8 @@ asgiref==3.8.1
     # via django
 charset-normalizer==3.3.2
     # via commitizen
+click==8.1.7
+    # via python-dotenv
 colorama==0.4.6
     # via commitizen
 commitizen==3.29.1
@@ -25,8 +27,6 @@ decli==0.6.2
     # via commitizen
 django==5.1.1
     # via django-extensions
-    # via staff-perfomance-evaluation-platform
-django-environ==0.11.2
     # via staff-perfomance-evaluation-platform
 django-extensions==3.2.3
     # via staff-perfomance-evaluation-platform
@@ -47,6 +47,8 @@ prompt-toolkit==3.0.36
 pytest==8.3.3
     # via pytest-cov
 pytest-cov==5.0.0
+python-dotenv==1.0.1
+    # via staff-perfomance-evaluation-platform
 pyyaml==6.0.2
     # via commitizen
 questionary==2.0.1
