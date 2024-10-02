@@ -30,6 +30,8 @@ django==5.1.1
     # via staff-perfomance-evaluation-platform
 django-extensions==3.2.3
     # via staff-perfomance-evaluation-platform
+execnet==2.1.1
+    # via pytest-xdist
 iniconfig==2.0.0
     # via pytest
 jinja2==3.1.4
@@ -46,7 +48,12 @@ prompt-toolkit==3.0.36
     # via questionary
 pytest==8.3.3
     # via pytest-cov
+    # via pytest-django
+    # via pytest-xdist
+    # via staff-perfomance-evaluation-platform
 pytest-cov==5.0.0
+pytest-django==4.9.0
+pytest-xdist==3.6.1
 python-dotenv==1.0.1
     # via staff-perfomance-evaluation-platform
 pyyaml==6.0.2

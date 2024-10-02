@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import CustomUser, Department
+
+from evaluation_platform_backend.users.models import CustomUser, Department
 
 
 class CustomUserAdmin(UserAdmin):
@@ -10,18 +11,30 @@ class CustomUserAdmin(UserAdmin):
         "first_name",
         "last_name",
         "department",
-        "role",
+        "job_title",
         "is_staff",
         "is_active",
+        "years_of_service",
     )
-    list_filter = ("email", "is_staff", "is_active", "role")
+    list_filter = ("email", "is_staff", "is_active", "department", "role")
     fieldsets = (
         (None, {"fields": ("email", "password")}),
         (
             "Personal info",
-            {"fields": ("first_name", "last_name", "department", "role")},
+            {
+                "fields": (
+                    "first_name",
+                    "last_name",
+                    "department",
+                    "job_title",
+                    "date_hired",
+                )
+            },
         ),
-        ("Permissions", {"fields": ("is_staff", "is_active")}),
+        (
+            "Permissions",
+            {"fields": ("is_staff", "is_active", "groups", "user_permissions")},
+        ),
     )
     add_fieldsets = (
         (
@@ -30,16 +43,21 @@ class CustomUserAdmin(UserAdmin):
                 "classes": ("wide",),
                 "fields": (
                     "email",
+                    "password1",
+                    "password2",
                     "first_name",
+                    "last_name",
                     "department",
-                    "role",
+                    "job_title",
                     "is_staff",
                     "is_active",
+                    "groups",
+                    "user_permissions",
                 ),
             },
         ),
     )
-    search_fields = ("email",)
+    search_fields = ("email", "first_name", "last_name", "department")
     ordering = ("email",)
 
 

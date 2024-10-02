@@ -16,6 +16,7 @@ help:
 	@echo "   createsuperuser             Create a superuser"
 	@echo "   test                        Run tests"
 	@echo "   collectstatic               Collect static files"
+	@echo "   shell-plus                  Open Django shell with the django-extensions package"
 	@echo "   install-deps                Install project dependencies"
 	@echo "   update-deps                 Update project dependencies"
 
@@ -40,6 +41,9 @@ test:
 
 collectstatic:
 	$(PYTHON) $(MANAGE_PY) collectstatic
+
+shell-plus:
+	$(PYTHON) $(MANAGE_PY) shell_plus
 
 # Dependency management
 install-deps:
