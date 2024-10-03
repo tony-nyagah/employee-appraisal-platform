@@ -7,7 +7,6 @@ dependencies = [
     "django-extensions>=3.2.3",
     "werkzeug>=3.0.4",
     "python-dotenv[cli]>=1.0.1",
-    "pytest>=8.3.3",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -24,6 +23,7 @@ dev-dependencies = [
     "pytest-cov>=5.0.0",
     "pytest-django>=4.9.0",
     "pytest-xdist>=3.6.1",
+    "django-debug-toolbar>=4.4.6",
 ]
 
 [tool.hatch.metadata]

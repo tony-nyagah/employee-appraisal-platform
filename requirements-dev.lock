@@ -26,8 +26,10 @@ coverage==7.6.1
 decli==0.6.2
     # via commitizen
 django==5.1.1
+    # via django-debug-toolbar
     # via django-extensions
     # via staff-perfomance-evaluation-platform
+django-debug-toolbar==4.4.6
 django-extensions==3.2.3
     # via staff-perfomance-evaluation-platform
 execnet==2.1.1
@@ -62,6 +64,7 @@ questionary==2.0.1
     # via commitizen
 sqlparse==0.5.1
     # via django
+    # via django-debug-toolbar
 termcolor==2.4.0
     # via commitizen
 tomlkit==0.13.2
