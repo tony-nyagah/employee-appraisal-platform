@@ -52,7 +52,6 @@ pytest==8.3.3
     # via pytest-cov
     # via pytest-django
     # via pytest-xdist
-    # via staff-perfomance-evaluation-platform
 pytest-cov==5.0.0
 pytest-django==4.9.0
 pytest-xdist==3.6.1

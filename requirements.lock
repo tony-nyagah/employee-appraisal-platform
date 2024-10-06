@@ -19,16 +19,8 @@ django==5.1.1
     # via staff-perfomance-evaluation-platform
 django-extensions==3.2.3
     # via staff-perfomance-evaluation-platform
-iniconfig==2.0.0
-    # via pytest
 markupsafe==2.1.5
     # via werkzeug
-packaging==24.1
-    # via pytest
-pluggy==1.5.0
-    # via pytest
-pytest==8.3.3
-    # via staff-perfomance-evaluation-platform
 python-dotenv==1.0.1
     # via staff-perfomance-evaluation-platform
 sqlparse==0.5.1

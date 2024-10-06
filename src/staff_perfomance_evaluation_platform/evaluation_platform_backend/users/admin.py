@@ -1,7 +1,11 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
-from evaluation_platform_backend.users.models import CustomUser, Department
+from evaluation_platform_backend.users.models import (
+    CustomUser,
+    Department,
+    Organization,
+)
 
 
 class CustomUserAdmin(UserAdmin):
@@ -69,5 +73,14 @@ class DepartmentAdmin(admin.ModelAdmin):
     )
 
 
+class OrganizationAdmin(admin.ModelAdmin):
+    model = Organization
+    list_display = (
+        "name",
+        "abbreviation",
+    )
+
+
 admin.site.register(CustomUser, CustomUserAdmin)
 admin.site.register(Department, DepartmentAdmin)
+admin.site.register(Organization, OrganizationAdmin)

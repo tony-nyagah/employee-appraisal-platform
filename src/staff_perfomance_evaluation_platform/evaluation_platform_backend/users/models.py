@@ -9,6 +9,16 @@ from django.utils.translation import gettext_lazy as _
 from datetime import datetime
 
 
+class Organization(models.Model):
+    name = models.CharField(max_length=100)
+    abbreviation = models.CharField(max_length=10, null=True, blank=True)
+
+    def __str__(self):
+        if self.abbreviation:
+            return self.abbreviation
+        return self.name
+
+
 class Role(models.TextChoices):
     REGULAR_STAFF = "RS", _("Regular Staff")
     MANAGERIAL_STAFF = "MS", _("Managerial Staff")
@@ -18,6 +28,7 @@ class Role(models.TextChoices):
 class Department(models.Model):
     name = models.CharField(max_length=100)
     abbreviation = models.CharField(max_length=10)
+    organization = models.ForeignKey(Organization, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.abbreviation
