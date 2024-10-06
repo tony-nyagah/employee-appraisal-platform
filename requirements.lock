@@ -9,21 +9,14 @@
 #   generate-hashes: false
 #   universal: false
 
--e file:.
 asgiref==3.8.1
     # via django
 click==8.1.7
     # via python-dotenv
 django==5.1.1
-    # via django-extensions
-    # via staff-perfomance-evaluation-platform
-django-extensions==3.2.3
-    # via staff-perfomance-evaluation-platform
 markupsafe==2.1.5
     # via werkzeug
 python-dotenv==1.0.1
-    # via staff-perfomance-evaluation-platform
 sqlparse==0.5.1
     # via django
 werkzeug==3.0.4
-    # via staff-perfomance-evaluation-platform

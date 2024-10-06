@@ -1,7 +1,7 @@
 # Variables
 PYTHON := python
-MANAGE_PY := src/staff_perfomance_evaluation_platform/manage.py
-PORT := 8000
+MANAGE_PY := manage.py
+PORT := 8030
 
 # Default target
 .DEFAULT_GOAL := help

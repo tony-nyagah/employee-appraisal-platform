@@ -3,5 +3,5 @@ from django.apps import AppConfig
 
 class UsersConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "evaluation_platform_backend.users"
+    name = "evaluation_platform.users"
     verbose_name = "Users"

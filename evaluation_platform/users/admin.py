@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
-from evaluation_platform_backend.users.models import (
+from evaluation_platform.users.models import (
     CustomUser,
     Department,
     Organization,
