@@ -9,7 +9,6 @@
 #   generate-hashes: false
 #   universal: false
 
--e file:.
 argcomplete==3.5.0
     # via commitizen
 asgiref==3.8.1
@@ -28,10 +27,8 @@ decli==0.6.2
 django==5.1.1
     # via django-debug-toolbar
     # via django-extensions
-    # via staff-perfomance-evaluation-platform
 django-debug-toolbar==4.4.6
 django-extensions==3.2.3
-    # via staff-perfomance-evaluation-platform
 execnet==2.1.1
     # via pytest-xdist
 iniconfig==2.0.0
@@ -56,7 +53,6 @@ pytest-cov==5.0.0
 pytest-django==4.9.0
 pytest-xdist==3.6.1
 python-dotenv==1.0.1
-    # via staff-perfomance-evaluation-platform
 pyyaml==6.0.2
     # via commitizen
 questionary==2.0.1
@@ -71,4 +67,3 @@ tomlkit==0.13.2
 wcwidth==0.2.13
     # via prompt-toolkit
 werkzeug==3.0.4
-    # via staff-perfomance-evaluation-platform
