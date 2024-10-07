@@ -67,10 +67,7 @@ class CustomUserAdmin(UserAdmin):
 
 class DepartmentAdmin(admin.ModelAdmin):
     model = Department
-    list_display = (
-        "name",
-        "abbreviation",
-    )
+    list_display = ("name", "abbreviation", "organization")
 
 
 class OrganizationAdmin(admin.ModelAdmin):

@@ -3,17 +3,15 @@
 {% block title %}User Profile{% endblock %}
 
 {% block content %}
-<div class="row">
-    <div class="col-md-6 offset-md-3">
-        <h2 class="mb-4">User Profile</h2>
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">{{ user.name }}</h5>
-                <p class="card-text"><strong>Name:</strong> {{ user.full_name }}</p>
-                <p class="card-text"><strong>Email:</strong> {{ user.email }}</p>
-                <p class="card-text"><strong>Department:</strong> {{ user.department }}</p>
-            </div>
+<section class="container">
+    <h2>User Profile</h2>
+    <div>
+        <div>
+            <p><strong>Name:</strong> {{ user.full_name }}</p>
+            <p><strong>Email:</strong> {{ user.email }}</p>
+            <p><strong>Department:</strong> {{ user.department }}</p>
+            <p><strong>Organization:</strong> {{ user.department.organization }}</p>
         </div>
     </div>
-</div>
+</section>
 {% endblock %}

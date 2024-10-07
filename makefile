@@ -9,7 +9,7 @@ PORT := 8030
 # Help target
 help:
 	@echo "Available targets:"
-	@echo "   run-server                  Run the Django development server"
+	@echo "   runserver                   Run the Django development server"
 	@echo "   migrate                     Apply database migrations"
 	@echo "   makemigrations              Create new database migrations"
 	@echo "   shell                       Open Django shell"
@@ -21,8 +21,8 @@ help:
 	@echo "   update-deps                 Update project dependencies"
 
 # Django management commands
-run-server:
-	$(PYTHON) $(MANAGE_PY) runserver $(PORT)
+runserver:
+	$(PYTHON) $(MANAGE_PY) runserver_plus $(PORT)
 
 migrate:
 	$(PYTHON) $(MANAGE_PY) migrate
